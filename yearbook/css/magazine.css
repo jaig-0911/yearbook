@@ -357,6 +357,16 @@ body{
 	background-size:88px 22px;
 }
 
+#home{
+	position:absolute;
+	z-index:1000;
+	width:40px;
+	height:22px;
+	top:20px;
+	right:20px;
+	background-size:88px 22px;
+}
+
 .zoom-icon-in{
 	background-position:0 0;
 	cursor: pointer;
