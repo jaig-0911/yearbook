@@ -16,6 +16,88 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+
+.animation-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .animation-area img {
+    position: absolute;
+    /* display: block; */
+    list-style: none;
+    /* background: url('../img/cake.svg'); */
+    width: 25px;
+    height: 25px;
+    animation: animate 20s linear infinite;
+    bottom: -150px;
+  }
+  
+  .animation-area img:nth-child(1) {
+  
+    left: 85%;
+    width: 300px;
+    height: 300px;
+    animation-delay: 0s;
+  }
+  
+  .animation-area img:nth-child(2) {
+
+    left: 75%;
+    width: 75px;
+    height: 75px;
+    animation-delay: 1.5s;
+    animation-duration: 10s;
+  }
+  
+  .animation-area img:nth-child(3) {
+ 
+    left: 60%;
+    width: 125px;
+    height: 125px;
+    animation-delay: 5.5s;
+  }
+  
+  .animation-area img:nth-child(4) {
+
+    left: 40%;
+    width: 150px;
+    height: 200px;
+    animation-delay: 0s;
+    animation-duration: 15s;
+  }
+  
+  .animation-area img:nth-child(5) {
+
+    left: 25%;
+    width: 200px;
+    height: 200px;
+    animation-delay: 0s;
+  }
+  
+  .animation-area img:nth-child(6) {
+
+    left: 0%;
+    width: 300px;
+    height: 300px;
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    
+    100% {
+      transform: translateY(-800px);
+      opacity: 0
+    }
+}
     </style>
     
 </head>
@@ -38,9 +120,21 @@ body {
       </header>
     
 
-    <section class="text-gray-600 body-font">
-        <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-          <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="yearbook/yearbook/IIT HYD Complete File Single Pages_page-0001.jpg">
+
+          <!-- Cubes animation part-starts -->
+<!--           <ul class="animation-area">
+            <img src="yearbook/grp/grp1.jpg">
+            <img src="yearbook/grp/grp2.jpg">
+            <img src="yearbook/grp/grp3.jpg">
+            <img src="yearbook/grp/grp4.jpg">
+            <img src="yearbook/grp/grp5.jpg">
+            <img src="yearbook/grp/grp6.jpg">
+          </ul> -->
+  
+
+    <section class="text-gray-600 body-font" >
+        <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col" style = "background-color:#EEE7E5">
+          <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="yearbook/yearbook/IIT HYD Complete File Single Pages_page-0001.jpg" style = "border-radius: 5%;">
           <div class="text-center lg:w-2/3 w-full">
             <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Year book</h1>
             <p class="mb-8 leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aliquam quisquam repudiandae soluta quasi dolor provident temporibus, minima sapiente fugiat officia expedita porro aliquid accusantium magni quibusdam ab? Ullam, dignissimos. Meggings kinfolk echo park stumptown DIY, kale chips beard jianbing tousled. Chambray dreamcatcher trust fund, kitsch vice godard disrupt ramps hexagon mustache umami snackwave tilde chillwave ugh. Pour-over meditation PBR&B pickled ennui celiac mlkshk freegan photo booth af fingerstache pitchfork.</p>
